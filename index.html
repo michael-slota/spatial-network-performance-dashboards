@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>5G Coverage Dashboard Suite</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    background:linear-gradient(135deg,#0f3d5e,#1b7f8f);
+    color:white;
+}
+
+.container{
+    max-width:1180px;
+    margin:auto;
+    padding:56px 30px;
+    text-align:center;
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    font-size:1.2rem;
+    color:#d9f0f4;
+    max-width:900px;
+    margin:auto;
+    margin-bottom:48px;
+    line-height:1.6;
+}
+
+.dashboard-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    color:#263238;
+    width:430px;
+    border-radius:12px;
+    padding:28px;
+    box-shadow:0 12px 28px rgba(0,0,0,0.25);
+    transition:0.25s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.badge{
+    display:inline-block;
+    background:#0f3d5e;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:0.85rem;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-top:0;
+    color:#0f3d5e;
+}
+
+.card p{
+    line-height:1.7;
+    min-height:145px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:18px;
+    padding:14px 30px;
+    background:#168a63;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:1.02rem;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.button:hover{
+    background:#106b4c;
+}
+
+.divider{
+    margin:70px auto 42px;
+    width:90%;
+    border-top:1px solid rgba(255,255,255,0.3);
+}
+
+.section-title{
+    font-size:1.8rem;
+    margin-bottom:10px;
+}
+
+.section-text{
+    max-width:900px;
+    margin:auto;
+    margin-bottom:30px;
+    color:#d9f0f4;
+    line-height:1.6;
+}
+
+.support-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+.small-button{
+    background:white;
+    color:#0f3d5e;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:8px;
+    font-weight:600;
+    font-size:0.95rem;
+    transition:0.2s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.18);
+}
+
+.small-button:hover{
+    transform:translateY(-2px);
+    background:#eef8fa;
+}
+
+footer{
+    margin-top:68px;
+    color:#d9f0f4;
+    font-size:0.9rem;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>5G Coverage Dashboard Suite</h1>
+
+<p class="subtitle">
+This website presents interactive analysis of 5G network measurements collected
+across a city around a central tower cluster. The dashboards explore how signal
+quality, throughput, latency and packet loss vary with distance and direction,
+and compare the measurements with target and minimum acceptable service levels.
+</p>
+
+<div class="dashboard-grid">
+
+<div class="card">
+
+<div class="badge">1D Analysis</div>
+
+<h2>Distance Performance Dashboard</h2>
+
+<p>
+Explore how each 5G performance metric changes with distance from the tower
+cluster. This dashboard includes fitted distance models, service-level lines,
+coverage-radius summaries and controls for switching between signal, throughput,
+latency and packet-loss metrics.
+</p>
+
+<a class="button"
+href="data/dashboards/citywide_network_metric_distance_decay_dashboard.html">
+Launch 1D Dashboard
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="badge">2D Analysis</div>
+
+<h2>Directional Coverage Dashboard</h2>
+
+<p>
+Inspect citywide coverage by direction and distance ring using polar plots.
+The dashboard reports the percentage of measurements meeting the target service
+level or the minimum acceptable service level for each metric and frequency
+band.
+</p>
+
+<a class="button"
+href="data/dashboards/citywide_network_metric_direction_distance_grid.html">
+Launch 2D Dashboard
+</a>
+
+</div>
+
+</div>
+
+<div class="divider"></div>
+
+<h2 class="section-title">
+Supporting Visualisations
+</h2>
+
+<p class="section-text">
+These additional plots show the underlying tower-cluster and citywide
+measurement data used to build the main dashboards. They are useful for checking
+measurement locations, comparing raw metric values and inspecting distance
+patterns before opening the larger dashboard views.
+</p>
+
+<div class="support-buttons">
+
+<a class="small-button"
+href="data/supporting/tower_cluster_network_metric_by_location.html">
+Tower Cluster Locations
+</a>
+
+<a class="small-button"
+href="data/supporting/tower_cluster_network_metric_vs_distance.html">
+Tower Cluster Distance Plot
+</a>
+
+<a class="small-button"
+href="data/supporting/citywide_network_metric_by_location.html">
+Citywide Measurement Locations
+</a>
+
+<a class="small-button"
+href="data/supporting/citywide_network_metric_vs_distance.html">
+Citywide Metric vs Distance
+</a>
+
+</div>
+
+<footer>
+5G coverage dataset &bull; Interactive dashboard suite
+</footer>
+
+</div>
+
+</body>
+
+</html>
