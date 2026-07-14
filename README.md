@@ -2,7 +2,7 @@
 
 Interactive dashboards for analysing, visualising and communicating spatial network performance.
 
-This project demonstrates how complex telecommunications measurements can be transformed into intuitive, interactive decision-support dashboards. Rather than focusing on software implementation, the repository showcases how analytical results can be communicated effectively to engineers, managers and other stakeholders.
+This project demonstrates how complex telecommunications measurements can be transformed into intuitive, interactive decision-support dashboards. The emphasis is on communicating analytical insights through intuitive visualisations that support engineering decision making.
 
 Using a realistic synthetic cellular drive-test survey, the dashboards enable users to explore network coverage, service quality and performance across multiple frequency bands through an interactive web interface. The application is designed to resemble the type of analytical reporting tool that could support network optimisation activities within a telecommunications organisation.
 
@@ -10,12 +10,14 @@ Using a realistic synthetic cellular drive-test survey, the dashboards enable us
 
 # Live Demo
 
-The dashboards are published using **GitHub Pages** and can be explored directly in a web browser.
+Explore multiple performance metrics, compare frequency bands and evaluate service targets directly within your browser. The dashboards are published using **GitHub Pages** and can be explored directly in a web browser.
 
 **Live application:**
 **https://michael-slota.github.io/spatial-network-performance-dashboards/**
 
 No installation or Python environment is required.
+
+![Demo Dashboard](images/live_demo.png)
 
 ---
 
