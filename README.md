@@ -32,16 +32,6 @@ The dashboards are designed to support questions such as:
 
 # Project Overview
 
-Modern telecommunications networks generate large volumes of spatial performance data that can be difficult to interpret using traditional reports or spreadsheets.
-
-This project demonstrates how interactive dashboards can be used to:
-
-* explore network performance spatially,
-* compare multiple radio-frequency bands,
-* evaluate service-level compliance,
-* identify coverage gaps,
-* communicate engineering insights through intuitive visualisations.
-
 The synthetic network represents a city served by eight 5G macro-cell towers with measurements collected throughout the surrounding area.
 
 The simulated environment includes:
@@ -95,16 +85,12 @@ The directional dashboard summarises network performance using polar sectors and
 
 The dashboard suite includes:
 
-* Interactive Plotly visualisations
+* Interactive browser-based visualisations
 * Frequency-band comparison
-* Distance-decay analysis
-* Directional performance analysis
+* Distance and directional performance analysis
 * Service-target evaluation
-* Interactive filtering
-* Hover tooltips
-* Summary statistics
-* Coverage estimation
-* Standalone HTML deployment
+* Coverage estimation and summary statistics
+* Standalone browser deployment
 
 ---
 
@@ -191,4 +177,4 @@ The dashboards are exported as standalone HTML applications and execute entirely
 
 # Limitations
 
-The measurements used throughout this project are synthetic but were designed to resemble realistic cellular drive-test surveys. The emphasis is therefore on demonstrating analytical techniques, spatial visualisation and stakeholder communication rather than representing an operational mobile network.
+The measurements are synthetic and designed to resemble realistic cellular drive-test surveys. The results therefore illustrate spatial analysis, performance visualisation and decision-support workflows rather than the performance of an operational mobile network.
