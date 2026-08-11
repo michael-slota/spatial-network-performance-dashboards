@@ -2,9 +2,7 @@
 
 Interactive dashboards for analysing, visualising and communicating spatial network performance.
 
-This project demonstrates how complex telecommunications measurements can be transformed into intuitive, interactive decision-support dashboards. The emphasis is on communicating analytical insights through intuitive visualisations that support engineering decision making.
-
-Using a realistic synthetic cellular drive-test survey, the dashboards enable users to explore network coverage, service quality and performance across multiple frequency bands through an interactive web interface. The application is designed to resemble the type of analytical reporting tool that could support network optimisation activities within a telecommunications organisation.
+Using a realistic synthetic cellular drive-test dataset, this project explores network coverage, service quality and performance across multiple frequency bands. Interactive dashboards support spatial exploration, service-target evaluation and identification of potential coverage gaps.
 
 ---
 
@@ -21,12 +19,15 @@ No installation or Python environment is required.
 
 ---
 
-# Portfolio Context
+# Key Questions Answered
 
-This repository forms part of my data science and analytics portfolio.
+The dashboards are designed to support questions such as:
 
-Its purpose is to demonstrate my ability to communicate technical analyses through interactive visualisations rather than to showcase software engineering or data-processing workflows. The underlying data preparation and modelling were completed separately; this repository focuses on the final analytical application that would typically be delivered to decision makers.
-
+* Where does network performance fall below service targets?
+* Which frequency bands provide the best coverage?
+* How does network performance change with distance?
+* Which areas would benefit most from additional infrastructure?
+  
 ---
 
 # Project Overview
@@ -69,20 +70,6 @@ Each measurement contains the following indicators.
 | **Upload Throughput**   | User upload performance                             |
 | **Latency**             | Network response time                               |
 | **Packet Loss**         | Reliability of packet delivery                      |
-
----
-
-# Key Questions Answered
-
-The dashboards are designed to support questions such as:
-
-* Where does network performance fall below service targets?
-* Which frequency bands provide the best coverage?
-* Which directions from the network centre perform best?
-* Where are the likely coverage gaps?
-* Which metrics have the greatest impact on user experience?
-* How does network performance change with distance?
-* Which areas would benefit most from additional infrastructure?
 
 ---
 
@@ -153,23 +140,6 @@ These thresholds allow the dashboards to estimate service compliance across both
 
 ---
 
-# Dashboard Design Principles
-
-The dashboards were designed with stakeholder communication in mind.
-
-Design principles include:
-
-* Simple, uncluttered layouts
-* Consistent colour palettes
-* Progressive disclosure of information
-* Interactive exploration
-* Service-target overlays
-* Executive summary statistics
-* Clear visual hierarchy
-* Standalone browser-based deployment
-
----
-
 # Repository Structure
 
 ```text
@@ -219,37 +189,6 @@ The dashboards are exported as standalone HTML applications and execute entirely
 
 ---
 
-# Intended Audience
-
-This application is designed for:
-
-* Telecommunications engineers
-* Network optimisation teams
-* Technical managers
-* Project stakeholders
-* Clients requiring accessible performance summaries
-
----
-
 # Limitations
 
 The measurements used throughout this project are synthetic but were designed to resemble realistic cellular drive-test surveys. The emphasis is therefore on demonstrating analytical techniques, spatial visualisation and stakeholder communication rather than representing an operational mobile network.
-
----
-
-# Portfolio Purpose
-
-This project demonstrates my ability to transform complex technical analyses into clear, interactive decision-support tools.
-
-Rather than emphasising software implementation, the repository focuses on communicating analytical insights through intuitive visualisations that support evidence-based engineering decisions.
-
-The project showcases:
-
-* Interactive dashboard development
-* Data visualisation
-* Spatial analytics
-* Performance monitoring
-* Statistical interpretation
-* Stakeholder-focused reporting
-* Technical communication
-* Decision-support design
